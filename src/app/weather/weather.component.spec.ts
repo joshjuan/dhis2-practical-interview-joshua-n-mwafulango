@@ -6,12 +6,13 @@ describe('WeatherComponent', () => {
   let component: WeatherComponent;
   let fixture: ComponentFixture<WeatherComponent>;
 
+  // ASYNCHRONOUS HANDLER
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [WeatherComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(WeatherComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
