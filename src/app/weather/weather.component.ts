@@ -1,19 +1,18 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-import {WeatherService} from "./weather.service";
+import { WeatherService } from '../weather.service';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-weather',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [CommonModule],
+  templateUrl: './weather.component.html',
+  styleUrl: './weather.component.scss'
 })
-export class AppComponent {
-  title = 'weather-app';
+
+export class WeatherComponent {
+  city: string = '';
   weatherData: any;
-  city: any;
 
   constructor(private weatherService: WeatherService) {}
 
@@ -22,4 +21,5 @@ export class AppComponent {
       this.weatherData = data;
     });
   }
+
 }

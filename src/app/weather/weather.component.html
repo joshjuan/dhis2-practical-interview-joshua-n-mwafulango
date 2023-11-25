@@ -1,0 +1,12 @@
+<!-- src/app/weather/weather.component.html -->
+<div>
+  <label for="city">Enter City:</label>
+  <input type="text" id="city" [(ngModel)]="city" />
+  <button (click)="getWeather()">Get Weather</button>
+</div>
+
+<div *ngIf="weatherData">
+  <h2>{{ weatherData.name }}, {{ weatherData.sys.country }}</h2>
+  <p>{{ weatherData.weather[0].description }}</p>
+  <p>Temperature: {{ weatherData.main.temp }}°C</p>
+</div>
