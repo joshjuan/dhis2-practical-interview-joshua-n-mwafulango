@@ -228,22 +228,11 @@
       <h1>Hello, {{ title }}</h1>
       <p>Fill the form below to get weather of your location 🎉</p>
     </div>
-<!--    <div style="text-align: center;">-->
-<!--      <h1>Weather App</h1>-->
-<!--      <app-weather></app-weather>-->
-<!--    </div>-->
-
-    <div>
-      <label for="city">Enter City:</label>
-      <input type="text" id="city" [(ngModel)]="city" />
-      <button (click)="getWeather()">Get Weather</button>
+    <div style="text-align: center;">
+      <h1>Weather App</h1>
+      <app-weather></app-weather>
     </div>
 
-    <div *ngIf="weatherData">
-      <h2>{{ weatherData.name }}, {{ weatherData.sys.country }}</h2>
-      <p>{{ weatherData.weather[0].description }}</p>
-      <p>Temperature: {{ weatherData.main.temp }}°C</p>
-    </div>
 
   </div>
 </main>
