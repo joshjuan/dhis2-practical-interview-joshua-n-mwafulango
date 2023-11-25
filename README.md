@@ -25,3 +25,28 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## DELIVERABLES
+A. Angular Structure:
+-------------------------------
+The application follows a standard Angular project structure with components, services, and modules.
+Separation of Concerns:
+-------------------------------
+The WeatherComponent is responsible for the user interface and handling user interactions.
+The WeatherService is responsible for making API requests to OpenWeatherMap.
+
+-------------------------------
+Responsiveness:
+
+The HTML and CSS are designed to be responsive using media queries.
+The layout adjusts based on screen width, ensuring a good user experience on various devices.
+
+-------------------------------
+User Input:
+Users can enter a city in the input field, and the app fetches weather data for that city.
+
+-------------------------------
+API Key Security:
+
+The OpenWeatherMap API key is stored in the WeatherService. It's crucial to keep API keys secure, and in a production scenario, you might consider server-side handling or environment variables.
